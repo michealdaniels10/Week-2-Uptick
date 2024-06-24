@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Recommendations</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Restaurant Recommendations</h1>
+        <input type="number" id="targetRating" placeholder="Enter target rating">
+        <button
+            onclick="recommendRestaurants(restaurants, parseFloat(document.getElementById('targetRating').value))">Recommend</button>
+        <div id="restaurant-list"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
